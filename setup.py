@@ -7,9 +7,8 @@ with open('README.md') as f:
 setup(
     name='demo',
     version='1.0',
-    #packages=['src/agda_kernel'],
-#     packages=setuptools.find_packages(where="src"),
-#     package_dir={""},
+    packages=setuptools.find_packages(where="src"),
+    package_dir={""},
     description='Demo',
     long_description=readme,
     long_description_content_type="text/markdown",
